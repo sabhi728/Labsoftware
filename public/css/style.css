@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --font1: "Poppins", sans-serif;
+    --background-color: #f1f7ff;
+    --lightgray: #eeeeee;
+    --buttoncolor: #5e9ff3;
+    --lightdarkgray: #cccccc;
+    --headerclickeffect: #eeeeee1f;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #0d6efd;
+}
+
+header name {
+    font-family: var(--font1);
+    font-size: 20px;
+    margin-left: 15px;
+    color: white;
+}
+
+.profileCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+    padding: 4px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.profileCard vert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 5px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.profileCard img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.profileCard vert role {
+    font-family: var(--font1);
+    font-size: 14px;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+.profileCard vert span {
+    font-family: var(--font1);
+    font-size: 18px;
+}
+
+.profileCard vert a {
+    font-family: var(--font1);
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.profileCard:hover {
+    background-color: var(--headerclickeffect);
+}
+
+footer {
+    background: white;
+    padding: 20px;
+    font-family: var(--font1);
+    font-weight: 300;
+}
+
+.webSidebar {
+    background: white;
+    padding: 10px 10px 100px 10px;
+    height: 100vh;
+    position: fixed;
+    overflow: auto;
+    box-sizing: border-box;
+    width: 250px;
+}
+
+.webSidebar ul {
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0;
+}
+
+.subMenuOpenBtn {
+    list-style: none;
+}
+
+.webSidebar ul li,
+.subMenuOpenBtn {
+    /* padding: 10px; */
+    border-radius: 10px;
+    /* cursor: pointer; */
+}
+
+.webSidebar ul li a,
+.subMenuOpenBtn a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.webSidebar ul li a span,
+.subMenuOpenBtn a span {
+    font-family: var(--font1);
+    margin-left: 8px;
+}
+
+.webSidebar ul li:hover,
+.subMenuOpenBtn:hover {
+    background: var(--lightgray);
+}
+
+.li_active {
+    background: var(--lightgray);
+}
+
+.webSidebar ul li a i,
+.subMenuOpenBtn a i {
+    font-size: 18px;
+    width: auto;
+}
+
+.profileDialog {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.subMenuOpenBtn a i {
+    transform: rotate(-90deg);
+}
+
+.submenu {
+    margin-left: 35px;
+    display: none;
+}
+
+.submenu span {
+    margin-left: 0px !important;
+    font-size: 16px;
+    display: block;
+}
+
+.actions {
+    width: 65vw;
+    position: fixed;
+    z-index: 999;
+    top: 15px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* display: flex; */
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.action_top {
+    position: fixed;
+    top: 15px;
+    z-index: 9999;
+    text-align: center;
+    left: 55%;
+}
+
+.note-editor .dropdown-toggle::after {
+    display: none;
+}

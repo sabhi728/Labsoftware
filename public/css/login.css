@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--background-color);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#loginCard {
+    background: white;
+    padding: 25px;
+    width: max-content;
+    box-shadow: 0px 0px 10px 4px #0000000a;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 500px;
+}
+
+#loginCard h1 {
+    font-family: var(--font1);
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+#loginCard span {
+    font-family: var(--font1);
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#emailTxt {
+    padding: 10px 20px;
+    border: 1px solid var(--lightgray);
+    border-radius: 10px;
+    font-family: var(--font1);
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#emailTxt:focus {
+    border: 1.5px solid black;
+}
+
+#passwordTxt {
+    padding: 10px 20px;
+    border: 1px solid var(--lightgray);
+    border-radius: 10px;
+    font-family: var(--font1);
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+#passwordTxt:focus {
+    border: 1.5px solid black;
+}
+
+#loginBtn {
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 10px;
+    font-family: var(--font1);
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--buttoncolor);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-family: var(--font1);
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}

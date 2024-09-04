@@ -1,0 +1,53 @@
+/* #reportHeaderInformation {
+    position: fixed;
+    top: 120px;
+    left: 15mm;
+    width: 86%;
+    height: 50px;
+    margin-top: 0px !important;
+} */
+
+/* #departmentNameTxt {
+    margin-top: 0px !important;
+} */
+
+/* #contentDiv {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    padding-top: 260px;
+    padding-bottom: 150px;
+    width: 100%;
+} */
+
+#contentDiv {
+    width: 100% !important;
+}
+
+#contentDiv>thead>tr>td {
+    padding-top: 10px !important;
+}
+
+#contentDiv>tfoot>tr>td {
+    padding-top: 80px !important;
+}
+
+#headerImage {
+    position: fixed !important;
+    height: 100vh !important;
+    width: 80vw !important;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+[alt="Scan me!"]:not(:last-child) {
+    display: none !important;
+}
+
+@page {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}

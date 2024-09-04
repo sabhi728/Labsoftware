@@ -1,0 +1,27 @@
+#contentDiv {
+    width: 100% !important;
+}
+
+#contentDiv>tfoot>tr>td {
+    padding-top: 80px !important;
+}
+
+#headerImage {
+    position: fixed !important;
+    height: 100% !important;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+[alt="Scan me!"]:not(:last-child) {
+    display: none !important;
+}
+
+@page {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
